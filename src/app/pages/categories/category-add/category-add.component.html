@@ -1,0 +1,25 @@
+<div class="col-md-12">
+  <div class="card">
+      <div class="header">
+          <h4 class="title">Create new Category</h4>
+      </div>
+      <div class="content">
+          <form #registerForm="ngForm" (ngSubmit)="save()">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="form-group">
+                          <label>Name</label>
+                          <input type="text" class="form-control border-input" placeholder="Category name" name="Name" [(ngModel)]="model.name">
+                      </div>
+                  </div>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-info btn-fill btn-wd btn-save">Save</button>
+                <button type="button" class="btn btn-simple btn-fill btn-wd btn-cancel" (click)="cancel()">Cancel</button>
+              </div>
+              <div class="clearfix"></div>
+          </form>
+
+      </div>
+  </div>
+</div>
